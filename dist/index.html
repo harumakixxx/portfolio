@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="ポートフォリオ">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARUKA MATSUDA | PORTFOLIO</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    $(function() {
+      $('.visible').one('inview', function(event, isInView) {
+        //一度のみのinviewの際は　.oneにする
+        if (isInView) {
+          $(this).addClass('effect');
+        } else {
+          $(this).removeClass('effect');
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+<body id="body">
+  <div class="modal-wrapper">
+    <img src="" alt="" class="modal-image">
+  </div>
+  <div id="splash">
+    <div id="splash_logo">HARUKA MATSUDA</div>
+  </div>
+  <header class="header" id="header">
+    <nav id="global-menu" aria-label="グローバル">
+      <ul role="menubar" class="mobile" id="mobile-menubar" aria-label="メインナビゲーション">
+        <li role="none">
+          <button tabindex="2" type="button" id="global-menu-button" aria-expanded="false" aria-controls="global-menu-overlay" data-close-label="メインメニューを閉じる" data-open-label="メインメニューを開く" aria-haspopup="true">
+            <svg role="img" id="global-menu-img" aria-labelledby="global-menu-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15">
+              <title id="global-menu-title">メインメニューを開く</title>
+              <g>
+                <line class="top" x1="0" y1="0.5" x2="23" y2="0.5" />
+                <line class="middle" x1="0" y1="7.5" x2="23" y2="7.5" />
+                <line class="bottom" x1="0" y1="14.5" x2="23" y2="14.5" />
+              </g>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <!-- ハンバーガーメニューをタップした場合に表示する内容 -->
+      <div id="global-menu-overlay" aria-hidden="true" aria-labelledby="global-menu-title">
+        <ul role="menu">
+          <li role="none" class="link">
+            <a role="menuitem" href="#top_header">TOP</a>
+          </li>
+          <li role="none" class="link">
+            <a role="menuitem" href="#top_prof">PROFILE</a>
+          </li>
+          <li role="none" class="link">
+            <a role="menuitem" href="#top_skill">SKILL</a>
+          </li>
+          <li role="none" class="link">
+            <a role="menuitem" href="#top_works">WORKS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="box__wrap">
+    <div class="box"></div>
+  </div>
+  <main class="visible">
+    <section class="top_header" id="top_header">
+      <div class="top_header__blur"></div>
+      <div class="top_header__inner">
+        <div class="top_header__main">
+          <h2>HARUKA MATSUDA</h2>
+          <p>松田 悠</p>
+          <p>1989/07/06（33）</p>
+          <dl>
+            <dt>Mail</dt>
+            <dd>harumakixxx@gmail.com</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="top_header__back"></div>
+    </section>
+    <section class="top_prof" id="top_prof">
+      <div class="top_prof__inner">
+        <h2 class="main__title">PROFILE</h2>
+        <div class="visible visible--under">
+          <p>高校在学時に独学で自身のHTMLサイトを作成していたところ、知人の幼稚園サイトを依頼されたことをきっかけに、WEBデザイナーに興味を持つ。<br> 独学ではなく専門学校でコーディング・ツールの使用方法などを学び、在職中のSLS株式会社へ入社。</p>
+          <p>自社サイト制作・SEO施策、外部企業のサイト制作経験を経て、現在はSEO部門でマネージャーとなり、SEO分析と施策・予算管理等の業務を中心に行う。</p>
+          <p>SEO施策により売上が向上するなど結果が出ることに嬉しさは感じていたものの、やりがいを感じていたWEB制作業務から遠ざかっていることに対し、悩むように。</p>
+          <p>2022年4月に予算達成したことで、以前の中心業務であったコーディング・WordPressのスキルを活かし、様々なサイト制作に携わるフロントエンドエンジニアになるため、転職を決意。</p>
+        </div>
+        <div class="top_prof__flex">
+          <div class="visible visible--under">
+            <h3>経歴</h3>
+            <ul>
+              <li>
+                <span>2010.3 </span>
+                <span>ECC専門学校卒業</span>
+              </li>
+              <li>
+                <span>2010.4～ </span>
+                <span>SLS株式会社 在職中</span>
+              </li>
+            </ul>
+          </div>
+          <div class="visible visible--under">
+            <h3>趣味</h3>
+            <ul>
+              <li>
+                <p>クロスバイク / インテリア・雑貨 / ネイル</p>
+              </li>
+              <li>
+                <p><span>new</span> 観葉植物 / リース作り / PCゲーム</p>
+              </li>
+            </ul>
+          </div>
+          <div class="visible visible--under">
+            <h3>性格</h3>
+            <ul>
+              <li>
+                <p>興味がある事はまずやってみる、時間を忘れ没頭することもある。</p>
+              </li>
+              <li>
+                <p>学んだこと・技術を共有することが好き。</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <section class="top_skill" id="top_skill">
+      <h2 class="main__title">SKILL</h2>
+      <div class="top_skill__flex">
+        <div class="visible visible--under list">
+          <h3>コーディング</h3>
+          <div class="meter-box">
+            <div class="meter meter-90">
+              <div class="meter-inner">
+                <div class="meter-line">
+                  <div class="meter-line-inner "></div>
+                </div>
+                <div class="meter-percent">
+                  <span class="meter-num">0</span>%
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>HTML・CSS（12年）</p>
+          <div class="meter-box">
+            <div class="meter meter-80">
+              <div class="meter-inner">
+                <div class="meter-line">
+                  <div class="meter-line-inner "></div>
+                </div>
+                <div class="meter-percent">
+                  <span class="meter-num">0</span>%
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>SCSS レスポンシブ（5年）</p>
+          <div class="meter-box">
+            <div class="meter meter-50">
+              <div class="meter-inner">
+                <div class="meter-line">
+                  <div class="meter-line-inner "></div>
+                </div>
+                <div class="meter-percent">
+                  <span class="meter-num">0</span>%
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>javascript（12年）・jQuery（5年）</p>
+        </div>
+        <div class="visible visible--under list">
+          <h3>Wordpress</h3>
+          <div class="meter-box">
+            <div class="meter meter-60">
+              <div class="meter-inner">
+                <div class="meter-line">
+                  <div class="meter-line-inner "></div>
+                </div>
+                <div class="meter-percent">
+                  <span class="meter-num">0</span>%
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>オリジナルテーマでの構築（5年）</p>
+          <p>関連するPHP・投稿のリアルタイム抽出等に使用するAjax</p>
+        </div>
+        <div class="visible visible--under list">
+          <h3>ツール</h3>
+          <div class="meter-box">
+            <div class="meter meter-70">
+              <div class="meter-inner">
+                <div class="meter-line">
+                  <div class="meter-line-inner "></div>
+                </div>
+                <div class="meter-percent">
+                  <span class="meter-num">0</span>%
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>Photoshop / Illustrator（12年）</p>
+          <div class="meter meter-50">
+            <div class="meter-inner">
+              <div class="meter-line">
+                <div class="meter-line-inner "></div>
+              </div>
+              <div class="meter-percent">
+                <span class="meter-num">0</span>%
+              </div>
+            </div>
+          </div>
+          <p>Excel マクロ（1年）</p>
+        </div>
+        <div class="visible visible--under list">
+          <h3>学習中のスキル</h3>
+          <div class="meter meter-20">
+            <div class="meter-inner">
+              <div class="meter-line">
+                <div class="meter-line-inner "></div>
+              </div>
+              <div class="meter-percent">
+                <span class="meter-num">0</span>%
+              </div>
+            </div>
+          </div>
+          <p>BEM記法 / Gulp / Nunjucks / Git・Github / Vue.js</p>
+        </div>
+      </div>
+      </div>
+    </section>
+    </div>
+    <section class="top_works" id="top_works">
+      <h2 class="main__title">WORKS</h2>
+      <div class="top_works__jump visible visible--under">
+        <input type="radio" v-model="show" value="0" checked="checked" id="jump1">
+        <label for="jump1">実務</label>
+        <input type="radio" v-model="show" value="1" id="jump2">
+        <label for="jump2">実務以外</label>
+      </div>
+      <transition mode="out-in">
+        <div class="top_works__inner" v-if="show==='0'" key="0">
+          <h3 class="top_works__title">実務</h3>
+          <div>
+            <p class="main__subtitle">2020.4～2022 現在</p>
+            <div class="list__inner">
+              <h4 class="list__title" class="list__title">自社 集客サイトのSEO施策</h4>
+              <ul class="top_works__flex">
+                <li>
+                  <figure>
+                    <a href="images/img_work_1_pc.png" data-lightbox="demo"><img src="images/img_work_1_thumb.png" alt=""></a>
+                  </figure>
+                  <p>
+                    <a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer">https://sls.co.jp/kagizaru/</a>
+                  </p>
+                </li>
+              </ul>
+              <p>チーム人数4名のマネージャーとしてSEO施策の分析、施策管理、記事のレギュレーション管理、ライティング、スケジュール管理、予算管理、Wordpressのカスタマイズ等。</p>
+            </div>
+          </div>
+          <div>
+            <p class="main__subtitle">2010.4～2020.4</p>
+            <img src="" alt="">
+            <div class="list__inner">
+              <h4 class="list__title">自社 集客サイト制作</h4>
+              <ul class="top_works__flex">
+                <li>
+                  <figure>
+                    <a href="images/img_work_2_pc.png" data-lightbox="demo"><img src="images/img_work_2_thumb.png" alt=""></a>
+                  </figure>
+                  <p>
+                    <a href="https://yurescue.com/" target="_blank" rel="noopener noreferrer">https://yurescue.com/</a>
+                  </p>
+                </li>
+                <li>
+                  <figure>
+                    <a href="images/img_work_3_pc.png" data-lightbox="demo"><img src="images/img_work_3_thumb.png" alt=""></a>
+                  </figure>
+                  <p>
+                    <a href="https://kagimaro.com/" target="_blank" rel="noopener noreferrer">https://kagimaro.com/</a>
+                  </p>
+                </li>
+                <li>
+                  <figure>
+                    <a href="images/img_work_4_pc.png" data-lightbox="demo"><img src="images/img_work_4_thumb.png" alt=""></a>
+                  </figure>
+                  <p>
+                    <a href="https://keytrouble69.net/" target="_blank" rel="noopener noreferrer">https://keytrouble69.net/</a>
+                  </p>
+                </li>
+                <li>
+                  <figure>
+                    <a href="images/img_work_5_pc.png" data-lightbox="demo"><img src="images/img_work_5_thumb.png" alt=""></a>
+                  </figure>
+                  <p>
+                    <a href="https://mizuzaru-kyuto.info/" target="_blank" rel="noopener noreferrer">https://mizuzaru-kyuto.info/</a><br>↑キャラクター除く・商品用データベース有
+                  </p>
+                </li>
+              </ul>
+              <p>他</p>
+              <p>制作人数：1人</p>
+              <p>作業内容：デザイン・コーディング・Wordpress化・ライティング・サイト内キャラクター作成</p>
+              <p>制作期間： 各サイト ベース約60日</p>
+            </div>
+          </div>
+          <div>
+            <p class="main__subtitle">2018.2～2018.5</p>
+            <img src="" alt="">
+            <div class="list__inner">
+              <h4 class="list__title">自社 コーポレートサイトリニューアル</h4>
+              <ul class="top_works__flex">
+                <li>
+                  <figure>
+                    <a href="images/img_work_6_pc.png" data-lightbox="demo"><img src="images/img_work_6_thumb.png" alt=""></a>
+                  </figure>
+                  <p>
+                    <a href="https://sls.co.jp/" target="_blank" rel="noopener noreferrer">https://sls.co.jp/</a>
+                  </p>
+                </li>
+              </ul>
+              <p>制作人数：1人</p>
+              <p>作業内容：デザイン・コーディング・Wordpress化</p>
+              <p>制作期間： ベース約30日</p>
+              <p>「古い見た目で求人に影響している・リニューアルをしたい・信頼性を上げたい」との社内の声があり、リニューアルを担当。</p>
+              <p>今後サービスページが増えることを想定しながら制作。</p>
+            </div>
+          </div>
+          <div>
+            <p class="main__subtitle">2017.1～2017.5</p>
+            <img src="" alt="">
+            <div class="list__inner">
+              <h4 class="list__title">コーポレートサイトリニューアル</h4>
+              <ul class="top_works__flex">
+                <li>
+                  <figure>
+                    <a href="images/img_work_7_pc.png" data-lightbox="demo"><img src="images/img_work_7_thumb.png" alt=""></a>
+                  </figure>
+                  <p>
+                    <a href="https://www.u-shin-showa.co.jp/" target="_blank" rel="noopener noreferrer">https://www.u-shin-showa.co.jp/</a>
+                  </p>
+                </li>
+              </ul>
+              <p>制作人数：1人</p>
+              <p>作業内容：デザイン・コーディング・Wordpress化</p>
+              <p>制作期間： ベース約30日</p>
+              <p>「古いサイトを変更したい」との希望で、リニューアルを担当。</p>
+              <p>ご依頼会社様と親会社様の2段階でデザイン確認が発生するため、サブページのデザインをご確認頂いている間に、ご確認済みの大枠のコーディングを進めるなど進行効率に注意した。</p>
+            </div>
+          </div>
+        </div>
+        <div class="top_works__inner" v-else-if="show==='1'" key="1">
+          <h3 class="top_works__title">実務以外</h3>
+          <div>
+            <p class="main__subtitle">2022.6</p>
+            <img src="" alt="">
+            <div class="list__inner">
+              <h4 class="list__title">ポートフォリオサイト制作</h4>
+              <ul class="top_works__flex">
+                <li>
+                  <figure>
+                    <a href="images/img_work_9_pc.png" data-lightbox="demo"><img src="images/img_work_9_thumb.png" alt=""></a>
+                  </figure>
+                </li>
+              </ul>
+              <p>学習中のスキルを実践（Vue.js・Nunjucks・gulp・Git（GitHubのプライベートリポジトリと連携））</p>
+              <p>制作人数：1人</p>
+              <p>作業内容：デザイン・コーディング</p>
+              <p>スキル：HTML・CSS（SCSS）</p>
+              <p>制作期間：約2日</p>
+            </div>
+          </div>
+          <div>
+            <p class="main__subtitle">2020.7～2020.10</p>
+            <img src="" alt="">
+            <div class="list__inner">
+              <h4 class="list__title">副業制作</h4>
+              <ul class="top_works__flex">
+                <li>
+                  <figure>
+                    <a href="images/img_work_8_pc.png" data-lightbox="demo"><img src="images/img_work_8_thumb.png" alt=""></a>
+                  </figure>
+                  <a href="https://yagikougyou.com/" target="_blank" rel="noopener noreferrer">https://yagikougyou.com/</a>
+                  </p>
+                </li>
+              </ul>
+              <p>他 2案件</p>
+              <p>制作人数：1人</p>
+              <p>作業内容：静的HTMLサイトのWordpress化</p>
+              <p>制作期間：1案件 約8時間</p>
+              <p>基本構成：フロントページ・固定ページ・投稿ページ・投稿一覧・お問い合わせページ</p>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; Haruka Matsuda</p>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+</html>

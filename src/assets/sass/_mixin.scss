@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+$font-main: 'Kiwi Maru', serif;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kiwi+Maru:wght@300;400;500&display=swap');
+$font-main-en: 'Comfortaa', cursive;
+
+$breakpoint_sp: 767px;
+$breakpoint_pc: 768px;
+
+$color-main: rgb(78, 130, 183);
+$color-accent: #ffb6e3;
+
+@mixin flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@mixin justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@mixin sp {
+    @media screen and (max-width: $breakpoint_sp) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width: $breakpoint_pc) {
+        @content;
+    }
+}
+
+@mixin backcolor($start: rgb(130, 186, 229 , 0.8), $end: rgb(255, 219, 241 , 0.8)) {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#82bae5+0,ffdbf1+97 */
+    background: $start;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, $start 0%, $end 97%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $start 0%, $end 97%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $start 0%, $end 97%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start', endColorstr='$end', GradientType=0);
+
+    /* IE6-9 */
+}

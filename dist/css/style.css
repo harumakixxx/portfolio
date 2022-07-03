@@ -1,0 +1,1267 @@
+@charset "UTF-8";
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kiwi+Maru:wght@300;400;500&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width: 260px;
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ふわっと */
+.visible {
+  opacity: 0;
+  transition: transform 0.5s linear;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.effect {
+  animation-name: imgbrightness;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+@keyframes imgbrightness {
+  0% {
+    opacity: 0;
+    filter: brightness(300%);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+.visible--under {
+  transform: translate(0, 40px);
+  -webkit-transform: translate(0, 40px);
+  transition: 0.8s;
+}
+
+.effect.visible--under {
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transition: 0.8s;
+}
+
+.v-enter {
+  opacity: 0;
+}
+
+.v-enter-active {
+  transition: opacity 1s;
+}
+
+.v-enter-to {
+  opacity: 1;
+}
+
+.v-leave {
+  opacity: 1;
+}
+
+.v-leave-active {
+  transition: opacity 1s;
+}
+
+.v-leave-to {
+  opacity: 0;
+}
+
+.meter-box {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.meter {
+  width: 100%;
+  max-width: 372px;
+  margin: 30px 0 10px;
+}
+
+.meter-inner {
+  position: relative;
+  border-radius: 10px 10px;
+}
+
+.meter-line {
+  width: 100%;
+  position: relative;
+  height: 3px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.meter-line:before {
+  position: absolute;
+  content: "";
+  width: 760px;
+  height: 12px;
+  display: block;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.705);
+}
+
+.meter-line-inner {
+  position: relative;
+  height: 12px;
+  width: 0%;
+  background: #b874d5;
+}
+
+.meter-num {
+  font-size: 0.8rem;
+}
+
+.meter-percent {
+  position: absolute;
+  display: block;
+  width: 60px;
+  margin-left: -30px;
+  left: 0%;
+  bottom: 3px;
+  color: #f9ffc9;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.meter-percent:after {
+  content: "▼";
+  display: block;
+  line-height: 1;
+  text-align: center;
+  transform: scale(0.8, 0.8);
+}
+
+#lightbox {
+  height: 80vh;
+  top: 20px;
+  margin-top: 20px;
+}
+#lightbox .lb-outerContainer {
+  height: 80vh !important;
+  width: 600px;
+  max-width: 80%;
+  overflow-y: scroll;
+}
+#lightbox .lb-outerContainer img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#body {
+  font-family: "Comfortaa", cursive, "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  background: #000;
+}
+
+a {
+  color: rgb(78, 130, 183);
+}
+
+a:hover {
+  color: #ffb6e3;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 100px;
+}
+
+.en {
+  font-family: "Comfortaa", cursive;
+}
+
+.main__subtitle {
+  color: rgb(78, 130, 183);
+  font-weight: 500;
+  border-bottom: 1px solid rgb(78, 130, 183);
+}
+@media screen and (min-width: 768px) {
+  .main__subtitle {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__subtitle {
+    font-size: 20px;
+  }
+}
+
+.main__title {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+@media screen and (min-width: 768px) {
+  .main__title {
+    font-size: 30px;
+    padding: 100px 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__title {
+    font-size: 30px;
+    padding: 40px 20px;
+  }
+}
+
+/* リセット系 ***************************************************************/
+nav#global-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav#global-menu ul li {
+  width: 100%;
+}
+
+nav#global-menu #global-menu-button {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+/* モバイルレイアウト系 ******************************************************/
+nav#global-menu ul.mobile {
+  display: flex;
+  width: 100%;
+  background: #CCC;
+}
+
+body {
+  margin: 0;
+}
+
+/* ハンバーガーメニュー系 ****************************************************/
+nav#global-menu ul.mobile #global-menu-button {
+  width: 100%;
+  height: 49px;
+  cursor: pointer;
+}
+
+nav#global-menu ul.mobile #global-menu-button svg {
+  margin: 0 20px 0 auto;
+  height: 15px;
+}
+
+nav#global-menu ul.mobile #global-menu-button svg line {
+  stroke: #fff;
+}
+
+nav#global-menu ul.mobile #global-menu-button {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* オーバーレイメニュー系 ****************************************************/
+nav#global-menu #global-menu-overlay {
+  width: 100%;
+  height: 60px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+nav#global-menu #global-menu-overlay[aria-hidden=false] {
+  visibility: visible;
+  overflow: auto;
+}
+
+nav#global-menu #global-menu-overlay > ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav#global-menu #global-menu-overlay > ul li {
+  width: 25%;
+  height: 100%;
+}
+nav#global-menu #global-menu-overlay > ul li a {
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  border-right: 1px solid #FFF;
+}
+@media screen and (min-width: 768px) {
+  nav#global-menu #global-menu-overlay > ul li a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav#global-menu #global-menu-overlay > ul li a {
+    font-size: 3.2vw;
+  }
+}
+nav#global-menu #global-menu-overlay > ul lilast-child a {
+  border-right: none;
+}
+
+/* オーバーレイメニュー アニメーション系 **************************************/
+nav#global-menu #global-menu-overlay {
+  background: rgb(78, 130, 183);
+  transform: translateY(-100px);
+  transition: all 0.2s ease;
+}
+
+nav#global-menu #global-menu-overlay[aria-hidden=false] {
+  transform: translateY(0);
+  transition: all 0.2s ease;
+}
+
+/* svg アニメーション系 *****************************************************/
+nav#global-menu ul.mobile #global-menu-button svg line {
+  transition: all 0.2s ease;
+}
+
+nav#global-menu #global-menu-button line.top {
+  transform-origin: 11.5px 0.5px;
+}
+
+nav#global-menu #global-menu-button line.bottom {
+  transform-origin: 11.5px 14.5px;
+}
+
+nav#global-menu #global-menu-button[aria-expanded=true] line.top {
+  transform: translate(0px, 7px) rotate(45deg);
+}
+
+nav#global-menu #global-menu-button[aria-expanded=true] line.bottom {
+  transform: translate(0px, -7px) rotate(-45deg);
+}
+
+nav#global-menu #global-menu-button[aria-expanded=true] line.middle {
+  transform: translate(-20px, 0px);
+  opacity: 0;
+}
+
+/* ハンバーガーメニューを上部に固定 ********************************************/
+nav#global-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* サブメニュー表示時のbodyスクロールの抑制 ************************************/
+/* フォーカスホバー時のハイライト表示 ******************************************/
+nav#global-menu ul.mobile #global-menu-button:focus,
+nav#global-menu ul.mobile #global-menu-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* PC環境の調整 *************************************************************/
+nav#global-menu ul.desktop {
+  display: none;
+}
+
+/* PCメニュー非表示 */
+/* レイヤー管理 *************************************************************/
+nav#global-menu #mobile-menubar {
+  position: relative;
+  z-index: 110;
+}
+
+/* 上 */
+nav#global-menu #global-menu-overlay {
+  position: absolute;
+  z-index: 100;
+}
+
+/* 下 */
+/* 以下モニタサイズごとの調整 ************************************************/
+/*
+    @media (min-width: 768px) {
+      nav#global-menu ul.mobile { display:none; }               // SPメニュー非表示
+      nav#global-menu #global-menu-overlay{ display:none; }     // SPメニュー非表示
+      nav#global-menu ul.desktop { display:block; }             // PCメニュー表示
+      // ハンバーガーメニューを上部に固定解除
+      nav#global-menu { position:static; height:auto; width:auto; background:transparent; }
+      body { margin:0; }
+    }
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1200px) {
+    }
+    */
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+}
+.box__wrap {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.top_header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .top_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+.top_header__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#82bae5+0,ffdbf1+97 */
+  background: #82bae5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #82bae5 0%, #ffdbf1 97%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #82bae5 0%, #ffdbf1 97%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #82bae5 0%, #ffdbf1 97%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$start", endColorstr="$end", GradientType=0);
+  /* IE6-9 */
+}
+.top_header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgb(255, 255, 255), rgba(255, 255, 255, 0.4));
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  padding: 60vh 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .top_header__inner {
+    width: 58.4%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_header__inner {
+    width: 100%;
+    height: 100vh;
+  }
+}
+.top_header__main {
+  width: 100%;
+  max-width: 500px;
+}
+.top_header h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: "Comfortaa", cursive;
+}
+@media screen and (min-width: 768px) {
+  .top_header h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_header h2 {
+    font-size: 36px;
+  }
+}
+.top_header p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.top_header dl {
+  text-align: center;
+}
+.top_header dl dt {
+  padding: 10px;
+  font-family: "Comfortaa", cursive;
+}
+
+.top_prof {
+  padding: 20px 30px 60px;
+  background: #FFF;
+  width: 100%;
+}
+.top_prof p {
+  line-height: 1.8em;
+  padding-bottom: 20px;
+}
+.top_prof__inner {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.top_prof__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .top_prof__flex {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_prof__flex {
+    padding: 0 0 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top_prof__flex div {
+    width: 33%;
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_prof__flex div {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+}
+.top_prof__flex div h3 {
+  padding: 20px 0;
+  font-weight: 500;
+  color: rgb(78, 130, 183);
+}
+@media screen and (min-width: 768px) {
+  .top_prof__flex div h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_prof__flex div h3 {
+    font-size: 20px;
+  }
+}
+.top_prof__flex div p {
+  line-height: 1.4em;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+.top_prof__flex div p span:first-child {
+  display: block;
+  color: rgb(78, 130, 183);
+  font-size: 14px;
+}
+.top_prof__flex div li {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.top_prof__flex div li span:first-child {
+  display: block;
+  color: rgb(78, 130, 183);
+}
+
+.top_skill {
+  padding: 20px 30px 60px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#82bae5+0,ffdbf1+97 */
+  background: rgb(130, 186, 229);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgb(130, 186, 229) 0%, rgb(255, 219, 241) 97%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgb(130, 186, 229) 0%, rgb(255, 219, 241) 97%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgb(130, 186, 229) 0%, rgb(255, 219, 241) 97%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$start", endColorstr="$end", GradientType=0);
+  /* IE6-9 */
+}
+.top_skill__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 0 40px;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .top_skill__flex .list {
+    width: 40%;
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_skill__flex .list {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+.top_skill__flex .list h3 {
+  font-weight: 500;
+  color: #FFF;
+}
+@media screen and (min-width: 768px) {
+  .top_skill__flex .list h3 {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_skill__flex .list h3 {
+    font-size: 20px;
+    padding: 20px 0 0;
+  }
+}
+.top_skill__flex .list p {
+  line-height: 1.4em;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+.top_skill__flex .list p span:first-child {
+  display: block;
+  color: rgb(78, 130, 183);
+  font-size: 14px;
+}
+.top_skill__flex .list li {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.top_skill__flex .list li span:first-child {
+  display: block;
+  color: rgb(78, 130, 183);
+}
+
+.top_works {
+  padding: 20px 30px 60px;
+  background: #FFF;
+}
+@media screen and (max-width: 767px) {
+  .top_works .main__title {
+    padding-bottom: 80px;
+  }
+}
+.top_works__jump {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.top_works__jump input[type=radio] {
+  display: none;
+  /* ラジオボタンを非表示にする */
+}
+.top_works__jump label {
+  padding: 0 20px;
+  border: 1px solid rgb(78, 130, 183);
+  padding: 20px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.4s;
+  margin: 0 20px 40px;
+}
+@media screen and (max-width: 767px) {
+  .top_works__jump label {
+    width: 50%;
+    margin: 0 6px 40px;
+    padding: 20px 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.top_works__jump label:hover,
+.top_works__jump input:checked + label {
+  background: #333;
+  border: 1px solid #ffb6e3;
+  transition: 0.4s;
+  color: #ffb6e3;
+  cursor: pointer;
+}
+.top_works__title {
+  position: absolute;
+  left: -1px;
+  top: -40px;
+  font-size: 28px;
+}
+.top_works__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.top_works__flex li {
+  width: 44%;
+  margin: 0 6% 0 0;
+}
+@media screen and (min-width: 768px) {
+  .top_works__flex li {
+    width: 44%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top_works__flex li {
+    width: 100%;
+  }
+}
+.top_works__flex figure {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.top_works__flex figure:hover {
+  cursor: pointer;
+}
+.top_works__flex figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 100% 0;
+  transition: 0.8s;
+}
+.top_works__flex figure img:hover {
+  transition: 0.8s;
+}
+.top_works__inner {
+  border-left: 1px solid rgb(78, 130, 183);
+  background-color: transparent;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto 80px;
+  padding: 40px 0 0 0;
+  position: relative;
+}
+.top_works__inner p {
+  line-height: 1.8em;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+.top_works__inner .main__subtitle {
+  font-size: 20px;
+  padding: 0 0 0 20px;
+  border: none;
+  position: relative;
+}
+.top_works__inner .main__subtitle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 14px;
+  border-top: 1px solid rgb(78, 130, 183);
+}
+.top_works__inner .list {
+  padding: 20px 20px;
+}
+.top_works__inner .list__inner {
+  padding: 20px 0 60px 40px;
+}
+.top_works__inner .list__title {
+  padding: 20px 0 20px;
+  font-size: 20px;
+  color: #010101;
+}
+
+.footer {
+  padding: 20px 30px 60px;
+  background: #000;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+}

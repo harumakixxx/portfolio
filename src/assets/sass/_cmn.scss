@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#body {
+    font-family: $font-main-en , "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    background: #000;
+}
+
+a {
+    color: rgb(78, 130, 183);
+}
+
+a:hover {
+    color: #ffb6e3;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 100px;
+}
+
+.en {
+    font-family: $font-main-en;
+}
+
+.main__subtitle {
+    @include pc {
+        font-size: 30px;
+    }
+
+    @include sp {
+        font-size: 20px;
+    }
+
+    color: rgb(78, 130, 183);
+    font-weight: 500;
+    border-bottom: 1px solid rgb(78, 130, 183);
+}
+
+.main__title {
+    text-align: center;
+    font-family: $font-main-en;
+
+    @include pc {
+        font-size: 30px;
+        padding: 100px 60px;
+    }
+
+    @include sp {
+        font-size: 30px;
+        padding: 40px 20px;
+    }
+}

@@ -1,0 +1,198 @@
+//svgハンバーガー
+//https://cookbook88.com/css-cookbook/menu/hamburger.php
+/* リセット系 ***************************************************************/
+nav#global-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    width: 100%;
+  }
+}
+
+nav#global-menu #global-menu-button {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+/* モバイルレイアウト系 ******************************************************/
+nav#global-menu ul.mobile {
+  display: flex;
+  width: 100%;
+  background: #CCC;
+}
+
+body {
+  margin: 0;
+}
+
+/* ハンバーガーメニュー系 ****************************************************/
+nav#global-menu ul.mobile #global-menu-button {
+  width: 100%;
+  height: 49px;
+  cursor: pointer;
+}
+
+nav#global-menu ul.mobile #global-menu-button svg {
+  //width: 100%;
+  margin: 0 20px 0 auto;
+  height: 15px;
+}
+
+nav#global-menu ul.mobile #global-menu-button svg line {
+  stroke: #fff;
+}
+
+nav#global-menu ul.mobile #global-menu-button {
+  display: inline-flex;
+  align-items: center;
+  //justify-content: center;
+}
+
+/* オーバーレイメニュー系 ****************************************************/
+nav#global-menu #global-menu-overlay {
+  width: 100%;
+  //height: 100vh;
+  height: 60px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+nav#global-menu #global-menu-overlay[aria-hidden="false"] {
+  visibility: visible;
+  overflow: auto;
+}
+
+nav#global-menu #global-menu-overlay>ul {
+  //padding-top: 40px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  height: 100%;
+  @include flex;
+  li{
+    width: calc(100% / 4);
+    height: 100%;
+    a{
+      height: 100%;
+      text-align: center;
+      @include flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+      border-right: 1px solid #FFF;
+      @include pc{
+        font-size: 20px;
+      }
+      @include sp{
+        font-size: 3.2vw;
+      }
+    }
+    &last-child{
+      a{
+        border-right: none;
+      }
+    }
+  }
+}
+
+/* オーバーレイメニュー アニメーション系 **************************************/
+nav#global-menu #global-menu-overlay {
+  background: rgb(78 130 183);
+  //transform: translateX(-120vw);横
+  transform: translateY(-100px);
+  transition: all .2s ease;
+}
+
+nav#global-menu #global-menu-overlay[aria-hidden="false"] {
+  //transform: translateX(0);横
+  transform: translateY(0);
+  transition: all .2s ease;
+}
+
+/* svg アニメーション系 *****************************************************/
+nav#global-menu ul.mobile #global-menu-button svg line {
+  transition: all 0.2s ease;
+}
+
+nav#global-menu #global-menu-button line.top {
+  transform-origin: 11.5px 0.5px;
+}
+
+nav#global-menu #global-menu-button line.bottom {
+  transform-origin: 11.5px 14.5px;
+}
+
+nav#global-menu #global-menu-button[aria-expanded="true"] line.top {
+  transform: translate(0px, 7px) rotate(45deg);
+}
+
+nav#global-menu #global-menu-button[aria-expanded="true"] line.bottom {
+  transform: translate(0px, -7px) rotate(-45deg);
+}
+
+nav#global-menu #global-menu-button[aria-expanded="true"] line.middle {
+  transform: translate(-20px, 0px);
+  opacity: 0;
+}
+
+/* ハンバーガーメニューを上部に固定 ********************************************/
+nav#global-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* サブメニュー表示時のbodyスクロールの抑制 ************************************/
+body.clip {
+  //overflow: hidden;
+}
+
+/* フォーカスホバー時のハイライト表示 ******************************************/
+nav#global-menu ul.mobile #global-menu-button:focus,
+nav#global-menu ul.mobile #global-menu-button:hover {
+  //outline: 1px dotted #fff;
+  background: rgba(0, 0, 0, .1);
+}
+
+/* PC環境の調整 *************************************************************/
+nav#global-menu ul.desktop {
+  display: none;
+}
+
+/* PCメニュー非表示 */
+
+/* レイヤー管理 *************************************************************/
+nav#global-menu #mobile-menubar {
+  position: relative;
+  z-index: 110;
+}
+
+/* 上 */
+nav#global-menu #global-menu-overlay {
+  position: absolute;
+  z-index: 100;
+}
+
+/* 下 */
+
+/* 以下モニタサイズごとの調整 ************************************************/
+/*
+    @media (min-width: 768px) {
+      nav#global-menu ul.mobile { display:none; }               // SPメニュー非表示
+      nav#global-menu #global-menu-overlay{ display:none; }     // SPメニュー非表示
+      nav#global-menu ul.desktop { display:block; }             // PCメニュー表示
+      // ハンバーガーメニューを上部に固定解除
+      nav#global-menu { position:static; height:auto; width:auto; background:transparent; }
+      body { margin:0; }
+    }
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1200px) {
+    }
+    */

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  {% include '_module/_head.njk' -%}
+  {% block css -%}{% endblock -%}
+	{% block js -%}{% endblock -%}
+</head>
+<body id="body">
+    {% include '_partials/header.njk' -%}
+    {% block contents -%}{%- endblock %}
+    {% include '_partials/footer.njk' -%}
+</body>
+<script src="js/script.js"></script>
+</html>

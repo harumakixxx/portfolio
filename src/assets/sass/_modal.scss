@@ -1,0 +1,15 @@
+#lightbox {
+    height: 80vh;
+    top: 20px;
+    margin-top: 20px;
+    .lb-outerContainer{
+        height: 80vh!important;
+        width: 600px;
+        max-width: 80%;
+        overflow-y: scroll;
+        img{
+            width: 100%!important;
+            height: auto!important;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+AuthUserFile /home/users/0/flier.jp-haruka-m/web/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Input ID and Password."
+AuthType Basic
+require valid-user
+<Files ~ "^.(htpasswd|htaccess)$">
+    deny from all
+</Files>
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

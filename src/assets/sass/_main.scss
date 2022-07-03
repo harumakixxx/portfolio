@@ -1,0 +1,414 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    @include flex;
+    @include flex-center;
+    padding: 0 20px;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+
+    &__wrap {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+    }
+}
+
+.top_header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    @include pc {
+        @include flex;
+        @include justify-center;
+    }
+
+    &__back {
+        @include pc {
+            //@include backcolor;
+            //width: 50%;
+            //height: 100vh;
+        }
+    }
+
+    &__blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        opacity: 0.8;
+        @include backcolor(#82bae5, #ffdbf1);
+    }
+
+    &__inner {
+        @include flex;
+        @include justify-center;
+        @include flex-wrap;
+        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4));
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        padding: 60vh 0 0 0;
+
+        @include pc {
+            width: 58.4%;
+            height: 100vh;
+            //background-color: rgb(255, 241, 241);
+        }
+
+        @include sp {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
+    &__main {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-family: $font-main-en;
+
+        @include pc {
+            font-size: 36px;
+        }
+
+        @include sp {
+            font-size: 36px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    dl {
+        text-align: center;
+
+        dt {
+            padding: 10px;
+            font-family: $font-main-en;
+        }
+    }
+}
+
+.top_prof {
+    padding: 20px 30px 60px;
+    background: #FFF;
+    width: 100%;
+
+    p {
+        line-height: 1.8em;
+        padding-bottom: 20px;
+    }
+
+    &__inner {
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+
+    &__flex {
+        @include flex;
+        @include flex-wrap;
+        @include flex-center;
+
+        @include pc {
+            padding: 60px 0;
+        }
+
+        @include sp {
+            padding: 0 0 0;
+        }
+
+        div {
+
+            @include pc {
+                width: 33%;
+                padding: 20px 0;
+            }
+
+            @include sp {
+                width: 100%;
+                padding: 20px 0 0;
+            }
+
+            h3 {
+                padding: 20px 0;
+
+                @include pc {
+                    font-size: 30px;
+                }
+
+                @include sp {
+                    font-size: 20px;
+                }
+
+                font-weight: 500;
+                color: rgb(78, 130, 183);
+            }
+
+            p {
+                line-height: 1.4em;
+                padding-bottom: 0;
+                font-size: 14px;
+
+                span:first-child {
+                    display: block;
+                    color: rgb(78, 130, 183);
+                    font-size: 14px;
+                }
+            }
+
+            li {
+                padding-bottom: 10px;
+                font-size: 14px;
+
+                span:first-child {
+                    display: block;
+                    color: rgb(78, 130, 183);
+                }
+            }
+        }
+    }
+}
+
+.top_skill {
+    padding: 20px 30px 60px;
+    @include backcolor(rgb(130, 186, 229), rgb(255, 219, 241));
+
+    &__flex {
+        @include flex;
+        @include flex-center;
+        @include flex-wrap;
+        padding: 0 0 40px;
+        max-width: 1020px;
+        width: 100%;
+        margin: 0 auto;
+
+        .list {
+
+            @include pc {
+                width: 40%;
+                padding: 20px 20px;
+            }
+
+            @include sp {
+                width: 100%;
+                max-width: 420px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            h3 {
+
+                @include pc {
+                    font-size: 30px;
+                    padding: 20px 0;
+                }
+
+                @include sp {
+                    font-size: 20px;
+                    padding: 20px 0 0;
+                }
+
+                font-weight: 500;
+                color: #FFF;
+            }
+
+            p {
+                line-height: 1.4em;
+                padding-bottom: 0;
+                font-size: 14px;
+
+                span:first-child {
+                    display: block;
+                    color: rgb(78, 130, 183);
+                    font-size: 14px;
+                }
+            }
+
+            li {
+                padding-bottom: 10px;
+                font-size: 14px;
+
+                span:first-child {
+                    display: block;
+                    color: rgb(78, 130, 183);
+                }
+            }
+        }
+    }
+}
+
+.top_works {
+    padding: 20px 30px 60px;
+    background: #FFF;
+
+    .main__title {
+        @include sp {
+            padding-bottom: 80px;
+        }
+    }
+
+    &__jump {
+        @include flex;
+        @include flex-center;
+        overflow: hidden;
+        margin-bottom: 60px;
+
+        input[type=radio] {
+            display: none;
+            /* ラジオボタンを非表示にする */
+        }
+
+        label {
+            padding: 0 20px;
+            border: 1px solid rgb(78, 130, 183);
+            padding: 20px;
+            font-size: 30px;
+            @include flex;
+            @include flex-center;
+            align-items: center;
+            border-radius: 20px;
+            transition: .4s;
+            margin: 0 20px 40px;
+
+            @include sp {
+                width: 50%;
+                margin: 0 6px 40px;
+                padding: 20px 10px;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        label:hover,
+        input:checked+label {
+            background: #333;
+            border: 1px solid $color-accent;
+            transition: .4s;
+            color: $color-accent;
+            cursor: pointer;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: -1px;
+        top: -40px;
+        font-size: 28px;
+    }
+
+    &__flex {
+        @include flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 44%;
+            margin: 0 6% 0 0;
+            @include pc{
+                width: 44%;
+            }
+            @include sp{
+                width: 100%;
+            }
+        }
+
+        figure {
+            width: 100%;
+            height: auto;
+            display: block;
+            background: #000;
+            overflow: hidden;
+            margin-bottom: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: 100% 0;
+                transition: .8s;
+
+                &:hover {
+                    //transform:scale(1.2,1.2);
+                    transition: .8s;
+                }
+            }
+        }
+    }
+
+    &__inner {
+        border-left: 1px solid rgb(78, 130, 183);
+        background-color: transparent;
+        max-width: 1020px;
+        width: 100%;
+        margin: 0 auto 80px;
+        padding: 40px 0 0 0;
+        position: relative;
+
+        p {
+            line-height: 1.8em;
+            padding-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .main__subtitle {
+            font-size: 20px;
+            padding: 0 0 0 20px;
+            border: none;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 17px;
+                width: 14px;
+                border-top: 1px solid rgb(78, 130, 183);
+            }
+        }
+
+        .list {
+            padding: 20px 20px;
+
+            &__inner {
+                padding: 20px 0 60px 40px;
+            }
+
+            &__title {
+                padding: 20px 0 20px;
+                font-size: 20px;
+                color: #010101;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 20px 30px 60px;
+    background: #000;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+}

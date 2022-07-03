@@ -1,0 +1,61 @@
+{# モーダル #}
+<div class="modal-wrapper">
+    <img src="" alt="" class="modal-image">
+</div>
+{# ローディング #}
+<div id="splash">
+    <div id="splash_logo">HARUKA MATSUDA</div>
+</div>
+<header class="header" id="header">
+    <nav id="global-menu" aria-label="グローバル">
+
+        {# SP向けメニュー #}
+        <ul role="menubar" class="mobile" id="mobile-menubar"  aria-label="メインナビゲーション">
+            <li role="none">
+                <button
+            tabindex="2"
+            type="button"
+            id="global-menu-button"
+            aria-expanded="false"
+            aria-controls="global-menu-overlay"
+            data-close-label="メインメニューを閉じる"
+            data-open-label="メインメニューを開く"
+            aria-haspopup="true"
+            >
+                    <svg
+            role="img"
+            id="global-menu-img"
+            aria-labelledby="global-menu-title"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 23 15">
+                        <title id="global-menu-title">メインメニューを開く</title>
+                        <g><line class="top" x1="0" y1="0.5" x2="23" y2="0.5"/>
+                            <line class="middle" x1="0" y1="7.5" x2="23" y2="7.5"/>
+                            <line class="bottom" x1="0" y1="14.5" x2="23" y2="14.5"/></g>
+                    </svg>
+                </button>
+            </li>
+            {# <li role="none" class="logo" ><a tabindex="1" role="menuitem" href="#">タイトル</a></li> #}
+        </ul>
+
+        <!-- ハンバーガーメニューをタップした場合に表示する内容 -->
+        <div id="global-menu-overlay" aria-hidden="true" aria-labelledby="global-menu-title">
+            <ul role="menu">
+                <li role="none" class="link">
+                    <a role="menuitem" href="#top_header">TOP</a>
+                </li>
+                <li role="none" class="link">
+                    <a role="menuitem" href="#top_prof">PROFILE</a>
+                </li>
+                <li role="none" class="link">
+                    <a role="menuitem" href="#top_skill">SKILL</a>
+                </li>
+                <li role="none" class="link">
+                    <a role="menuitem" href="#top_works">WORKS</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+</header>
