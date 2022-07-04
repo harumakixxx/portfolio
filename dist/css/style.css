@@ -482,7 +482,7 @@ th {
 }
 
 .v-enter-active {
-  transition: opacity 1s;
+  transition: opacity 0.2s;
 }
 
 .v-enter-to {
@@ -494,7 +494,7 @@ th {
 }
 
 .v-leave-active {
-  transition: opacity 1s;
+  transition: opacity 0.2s;
 }
 
 .v-leave-to {
@@ -554,7 +554,7 @@ th {
   margin-left: -30px;
   left: 0%;
   bottom: 3px;
-  color: #f9ffc9;
+  color: #746919;
   text-align: center;
   font-size: 0.7rem;
 }
@@ -567,7 +567,7 @@ th {
 }
 
 #lightbox {
-  height: 80vh;
+  height: 100vh;
   top: 20px;
   margin-top: 20px;
 }
@@ -580,6 +580,16 @@ th {
 #lightbox .lb-outerContainer img {
   width: 100% !important;
   height: auto !important;
+}
+#lightbox .lb-dataContainer {
+  width: 570px;
+  height: 0px;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+#lightbox .lb-details {
+  display: none;
 }
 
 html {
@@ -605,7 +615,6 @@ a:hover {
 
 ::-webkit-scrollbar-track {
   background-color: #e4e4e4;
-  border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -882,7 +891,7 @@ nav#global-menu #global-menu-overlay {
   left: 0;
   height: 100vh;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.5;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#82bae5+0,ffdbf1+97 */
   background: #82bae5;
   /* Old browsers */
@@ -1081,7 +1090,7 @@ nav#global-menu #global-menu-overlay {
 }
 .top_skill__flex .list h3 {
   font-weight: 500;
-  color: #FFF;
+  color: #000;
 }
 @media screen and (min-width: 768px) {
   .top_skill__flex .list h3 {
@@ -1118,10 +1127,18 @@ nav#global-menu #global-menu-overlay {
   padding: 20px 30px 60px;
   background: #FFF;
 }
+.top_works p {
+  word-break: break-all;
+}
 @media screen and (max-width: 767px) {
   .top_works .main__title {
     padding-bottom: 80px;
   }
+}
+.top_works__inner {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
 }
 .top_works__jump {
   display: -webkit-box;
@@ -1138,8 +1155,8 @@ nav#global-menu #global-menu-overlay {
   /* ラジオボタンを非表示にする */
 }
 .top_works__jump label {
+  width: 50%;
   padding: 0 20px;
-  border: 1px solid rgb(78, 130, 183);
   padding: 20px;
   font-size: 30px;
   display: -webkit-box;
@@ -1149,25 +1166,27 @@ nav#global-menu #global-menu-overlay {
   -ms-flex-pack: center;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  transition: 0.4s;
-  margin: 0 20px 40px;
+  transition: 0.2s;
+  margin: 0 0 40px;
+  background: #FFF;
+  border: 2px solid rgb(78, 130, 183);
+  color: rgb(78, 130, 183);
 }
 @media screen and (max-width: 767px) {
   .top_works__jump label {
     width: 50%;
-    margin: 0 6px 40px;
+    margin: 0 0 40px;
     padding: 20px 10px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
   }
 }
 .top_works__jump label:hover,
 .top_works__jump input:checked + label {
-  background: #333;
-  border: 1px solid #ffb6e3;
-  transition: 0.4s;
-  color: #ffb6e3;
+  background: rgb(78, 130, 183);
+  border: 2px solid rgb(78, 130, 183);
+  transition: 0.2s;
+  color: #FFF;
   cursor: pointer;
 }
 .top_works__title {
@@ -1217,7 +1236,7 @@ nav#global-menu #global-menu-overlay {
 .top_works__flex figure img:hover {
   transition: 0.8s;
 }
-.top_works__inner {
+.top_works__contents {
   border-left: 1px solid rgb(78, 130, 183);
   background-color: transparent;
   max-width: 1020px;
@@ -1226,18 +1245,18 @@ nav#global-menu #global-menu-overlay {
   padding: 40px 0 0 0;
   position: relative;
 }
-.top_works__inner p {
+.top_works__contents p {
   line-height: 1.8em;
   padding-bottom: 20px;
   font-size: 14px;
 }
-.top_works__inner .main__subtitle {
+.top_works__contents .main__subtitle {
   font-size: 20px;
   padding: 0 0 0 20px;
   border: none;
   position: relative;
 }
-.top_works__inner .main__subtitle::before {
+.top_works__contents .main__subtitle::before {
   content: "";
   display: block;
   position: absolute;
@@ -1246,13 +1265,13 @@ nav#global-menu #global-menu-overlay {
   width: 14px;
   border-top: 1px solid rgb(78, 130, 183);
 }
-.top_works__inner .list {
+.top_works__contents .list {
   padding: 20px 20px;
 }
-.top_works__inner .list__inner {
+.top_works__contents .list__inner {
   padding: 20px 0 60px 40px;
 }
-.top_works__inner .list__title {
+.top_works__contents .list__title {
   padding: 20px 0 20px;
   font-size: 20px;
   color: #010101;

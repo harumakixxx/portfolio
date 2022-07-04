@@ -58,7 +58,8 @@
                                 <p>クロスバイク / インテリア・雑貨 / ネイル</p>
                             </li>
                             <li>
-                                <p><span>new</span> 観葉植物 / リース作り / PCゲーム</p>
+                                <p>
+                                    <span>new</span> 観葉植物 / リース作り / PCゲーム</p>
                             </li>
                         </ul>
                     </div>
@@ -185,170 +186,172 @@
 
     </div>
     <section class="top_works" id="top_works">
-        <h2 class="main__title">WORKS</h2>
-        {# radio でないと動かない #}
-        <div class="top_works__jump visible visible--under">
-            <input type="radio" v-model="show" value="0" checked="checked" id="jump1">
-            <label for="jump1">実務</label>
-            <input type="radio" v-model="show" value="1" id="jump2">
-            <label for="jump2">実務以外</label>
-        </div>
+        <div class="top_works__inner">
+            <h2 class="main__title">WORKS</h2>
+            {# radio でないと動かない #}
+            <div class="top_works__jump visible visible--under">
+                <input type="radio" v-model="show" value="0" checked="checked" id="jump1">
+                <label for="jump1">実務</label>
+                <input type="radio" v-model="show" value="1" id="jump2">
+                <label for="jump2">実務以外</label>
+            </div>
 
-        <transition mode="out-in">
-            <div class="top_works__inner" v-if="show==='0'" key="0">
-                <h3 class="top_works__title">実務</h3>
-                <div>
-                    <p class="main__subtitle">2020.4～2022 現在</p>
-                    <div class="list__inner">
-                        <h4 class="list__title" class="list__title">自社 集客サイトのSEO施策</h4>
-                        <ul class="top_works__flex">
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_1_pc.png" data-lightbox="demo"><img src="images/img_work_1_thumb.png" alt=""></a>
-                                </figure>
-                                <p>
-                                    <a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer">https://sls.co.jp/kagizaru/</a>
-                                </p>
-                            </li>
-                        </ul>
-                        <p>チーム人数4名のマネージャーとしてSEO施策の分析、施策管理、記事のレギュレーション管理、ライティング、スケジュール管理、予算管理、Wordpressのカスタマイズ等。</p>
+            <transition mode="out-in">
+                <div class="top_works__contents" v-if="show==='0'" key="0">
+                    <h3 class="top_works__title">実務</h3>
+                    <div>
+                        <p class="main__subtitle">2020.4～2022 現在</p>
+                        <div class="list__inner">
+                            <h4 class="list__title" class="list__title">自社 集客サイトのSEO施策</h4>
+                            <ul class="top_works__flex">
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_1_pc.png" data-lightbox="demo"><img src="images/img_work_1_thumb.png" alt=""></a>
+                                    </figure>
+                                    <p>
+                                        <a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer">https://sls.co.jp/kagizaru/</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <p>チーム人数4名のマネージャーとしてSEO施策の分析、施策管理、記事のレギュレーション管理、ライティング、スケジュール管理、予算管理、Wordpressのカスタマイズ等。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="main__subtitle">2010.4～2020.4</p>
+                        <img src="" alt="">
+                        <div class="list__inner">
+                            <h4 class="list__title">自社 集客サイト制作</h4>
+                            <ul class="top_works__flex">
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_2_pc.png" data-lightbox="demo"><img src="images/img_work_2_thumb.png" alt=""></a>
+                                    </figure>
+                                    <p>
+                                        <a href="https://yurescue.com/" target="_blank" rel="noopener noreferrer">https://yurescue.com/</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_3_pc.png" data-lightbox="demo"><img src="images/img_work_3_thumb.png" alt=""></a>
+                                    </figure>
+                                    <p>
+                                        <a href="https://kagimaro.com/"target="_blank" rel="noopener noreferrer">https://kagimaro.com/</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_4_pc.png" data-lightbox="demo"><img src="images/img_work_4_thumb.png" alt=""></a>
+                                    </figure>
+                                    <p>
+                                        <a href="https://keytrouble69.net/"target="_blank" rel="noopener noreferrer">https://keytrouble69.net/</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_5_pc.png" data-lightbox="demo"><img src="images/img_work_5_thumb.png" alt=""></a>
+                                    </figure>
+                                    <p>
+                                        <a href="https://mizuzaru-kyuto.info/" target="_blank" rel="noopener noreferrer">https://mizuzaru-kyuto.info/</a><br>↑キャラクター除く・商品用データベース有</p>
+                                </li>
+                            </ul>
+                            <p>他</p>
+                            <p>制作人数：1人</p>
+                            <p>作業内容：デザイン・コーディング・Wordpress化・ライティング・サイト内キャラクター作成</p>
+                            <p>制作期間： 各サイト ベース約60日</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="main__subtitle">2018.2～2018.5</p>
+                        <img src="" alt="">
+                        <div class="list__inner">
+                            <h4 class="list__title">自社 コーポレートサイトリニューアル</h4>
+                            <ul class="top_works__flex">
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_6_pc.png" data-lightbox="demo"><img src="images/img_work_6_thumb.png" alt=""></a>
+                                    </figure>
+                                    <p>
+                                        <a href="https://sls.co.jp/" target="_blank" rel="noopener noreferrer">https://sls.co.jp/</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <p>制作人数：1人</p>
+                            <p>作業内容：デザイン・コーディング・Wordpress化</p>
+                            <p>制作期間： ベース約30日</p>
+                            <p>「古い見た目で求人に影響している・リニューアルをしたい・信頼性を上げたい」との社内の声があり、リニューアルを担当。</p>
+                            <p>今後サービスページが増えることを想定しながら制作。</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="main__subtitle">2017.1～2017.5</p>
+                        <img src="" alt="">
+                        <div class="list__inner">
+                            <h4 class="list__title">コーポレートサイトリニューアル</h4>
+                            <ul class="top_works__flex">
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_7_pc.png" data-lightbox="demo"><img src="images/img_work_7_thumb.png" alt=""></a>
+                                    </figure>
+                                    <p>
+                                        <a href="https://www.u-shin-showa.co.jp/" target="_blank" rel="noopener noreferrer">https://www.u-shin-showa.co.jp/</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <p>制作人数：1人</p>
+                            <p>作業内容：デザイン・コーディング・Wordpress化</p>
+                            <p>制作期間： ベース約30日</p>
+                            <p>「古いサイトを変更したい」との希望で、リニューアルを担当。</p>
+                            <p>ご依頼会社様と親会社様の2段階でデザイン確認が発生するため、サブページのデザインをご確認頂いている間に、ご確認済みの大枠のコーディングを進めるなど進行効率に注意した。</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <p class="main__subtitle">2010.4～2020.4</p>
-                    <img src="" alt="">
-                    <div class="list__inner">
-                        <h4 class="list__title">自社 集客サイト制作</h4>
-                        <ul class="top_works__flex">
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_2_pc.png" data-lightbox="demo"><img src="images/img_work_2_thumb.png" alt=""></a>
-                                </figure>
-                                <p>
-                                    <a href="https://yurescue.com/" target="_blank" rel="noopener noreferrer">https://yurescue.com/</a>
-                                </p>
-                            </li>
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_3_pc.png" data-lightbox="demo"><img src="images/img_work_3_thumb.png" alt=""></a>
-                                </figure>
-                                <p>
-                                    <a href="https://kagimaro.com/"target="_blank" rel="noopener noreferrer">https://kagimaro.com/</a>
-                                </p>
-                            </li>
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_4_pc.png" data-lightbox="demo"><img src="images/img_work_4_thumb.png" alt=""></a>
-                                </figure>
-                                <p>
-                                    <a href="https://keytrouble69.net/"target="_blank" rel="noopener noreferrer">https://keytrouble69.net/</a>
-                                </p>
-                            </li>
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_5_pc.png" data-lightbox="demo"><img src="images/img_work_5_thumb.png" alt=""></a>
-                                </figure>
-                                <p>
-                                    <a href="https://mizuzaru-kyuto.info/" target="_blank" rel="noopener noreferrer">https://mizuzaru-kyuto.info/</a><br>↑キャラクター除く・商品用データベース有</p>
-                            </li>
-                        </ul>
-                        <p>他</p>
-                        <p>制作人数：1人</p>
-                        <p>作業内容：デザイン・コーディング・Wordpress化・ライティング・サイト内キャラクター作成</p>
-                        <p>制作期間： 各サイト ベース約60日</p>
+                <div class="top_works__contents" v-else-if="show==='1'" key="1">
+                    <h3 class="top_works__title">実務以外</h3>
+                    <div>
+                        <p class="main__subtitle">2022.6</p>
+                        <img src="" alt="">
+                        <div class="list__inner">
+                            <h4 class="list__title">ポートフォリオサイト制作</h4>
+                            <ul class="top_works__flex">
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_9_pc.png" data-lightbox="demo"><img src="images/img_work_9_thumb.png" alt=""></a>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <p>学習中のスキルを実践（Vue.js・Nunjucks・gulp・Git（GitHubのプライベートリポジトリと連携））</p>
+                            <p>制作人数：1人</p>
+                            <p>作業内容：デザイン・コーディング</p>
+                            <p>GitHub：https://github.com/harumakixxx/portfolio</p>
+                            <p>制作期間：約2日</p>
+                        </div>
                     </div>
-                </div>
-
-                <div>
-                    <p class="main__subtitle">2018.2～2018.5</p>
-                    <img src="" alt="">
-                    <div class="list__inner">
-                        <h4 class="list__title">自社 コーポレートサイトリニューアル</h4>
-                        <ul class="top_works__flex">
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_6_pc.png" data-lightbox="demo"><img src="images/img_work_6_thumb.png" alt=""></a>
-                                </figure>
-                                <p>
-                                    <a href="https://sls.co.jp/" target="_blank" rel="noopener noreferrer">https://sls.co.jp/</a>
+                    <div>
+                        <p class="main__subtitle">2020.7～2020.10</p>
+                        <img src="" alt="">
+                        <div class="list__inner">
+                            <h4 class="list__title">副業制作</h4>
+                            <ul class="top_works__flex">
+                                <li>
+                                    <figure>
+                                        <a href="images/img_work_8_pc.png" data-lightbox="demo"><img src="images/img_work_8_thumb.png" alt=""></a>
+                                    </figure>
+                                    <a href="https://yagikougyou.com/" target="_blank" rel="noopener noreferrer">https://yagikougyou.com/</a>
                                 </p>
                             </li>
                         </ul>
+                        <p>他 2案件</p>
                         <p>制作人数：1人</p>
-                        <p>作業内容：デザイン・コーディング・Wordpress化</p>
-                        <p>制作期間： ベース約30日</p>
-                        <p>「古い見た目で求人に影響している・リニューアルをしたい・信頼性を上げたい」との社内の声があり、リニューアルを担当。</p>
-                        <p>今後サービスページが増えることを想定しながら制作。</p>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="main__subtitle">2017.1～2017.5</p>
-                    <img src="" alt="">
-                    <div class="list__inner">
-                        <h4 class="list__title">コーポレートサイトリニューアル</h4>
-                        <ul class="top_works__flex">
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_7_pc.png" data-lightbox="demo"><img src="images/img_work_7_thumb.png" alt=""></a>
-                                </figure>
-                                <p>
-                                    <a href="https://www.u-shin-showa.co.jp/" target="_blank" rel="noopener noreferrer">https://www.u-shin-showa.co.jp/</a>
-                                </p>
-                            </li>
-                        </ul>
-                        <p>制作人数：1人</p>
-                        <p>作業内容：デザイン・コーディング・Wordpress化</p>
-                        <p>制作期間： ベース約30日</p>
-                        <p>「古いサイトを変更したい」との希望で、リニューアルを担当。</p>
-                        <p>ご依頼会社様と親会社様の2段階でデザイン確認が発生するため、サブページのデザインをご確認頂いている間に、ご確認済みの大枠のコーディングを進めるなど進行効率に注意した。</p>
+                        <p>作業内容：静的HTMLサイトのWordpress化</p>
+                        <p>制作期間：1案件 約8時間</p>
+                        <p>基本構成：フロントページ・固定ページ・投稿ページ・投稿一覧・お問い合わせページ</p>
                     </div>
                 </div>
             </div>
-            <div class="top_works__inner" v-else-if="show==='1'" key="1">
-                <h3 class="top_works__title">実務以外</h3>
-                <div>
-                    <p class="main__subtitle">2022.6</p>
-                    <img src="" alt="">
-                    <div class="list__inner">
-                        <h4 class="list__title">ポートフォリオサイト制作</h4>
-                        <ul class="top_works__flex">
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_9_pc.png" data-lightbox="demo"><img src="images/img_work_9_thumb.png" alt=""></a>
-                                </figure>
-                            </li>
-                        </ul>
-                        <p>学習中のスキルを実践（Vue.js・Nunjucks・gulp・Git（GitHubのプライベートリポジトリと連携））</p>
-                        <p>制作人数：1人</p>
-                        <p>作業内容：デザイン・コーディング</p>
-                        <p>GitHub：https://github.com/harumakixxx/portfolio</p>
-                        <p>制作期間：約2日</p>
-                    </div>
-                </div>
-                <div>
-                    <p class="main__subtitle">2020.7～2020.10</p>
-                    <img src="" alt="">
-                    <div class="list__inner">
-                        <h4 class="list__title">副業制作</h4>
-                        <ul class="top_works__flex">
-                            <li>
-                                <figure>
-                                    <a href="images/img_work_8_pc.png" data-lightbox="demo"><img src="images/img_work_8_thumb.png" alt=""></a>
-                                </figure>
-                                <a href="https://yagikougyou.com/" target="_blank" rel="noopener noreferrer">https://yagikougyou.com/</a>
-                            </p>
-                        </li>
-                    </ul>
-                    <p>他 2案件</p>
-                    <p>制作人数：1人</p>
-                    <p>作業内容：静的HTMLサイトのWordpress化</p>
-                    <p>制作期間：1案件 約8時間</p>
-                    <p>基本構成：フロントページ・固定ページ・投稿ページ・投稿一覧・お問い合わせページ</p>
-                </div>
-            </div>
-        </div>
-    </transition>
+        </transition>
+    </div>
 </section>
 </main>
 {% endblock %}

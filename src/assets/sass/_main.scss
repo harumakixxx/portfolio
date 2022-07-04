@@ -43,7 +43,7 @@
         left: 0;
         height: 100vh;
         width: 100%;
-        opacity: 0.8;
+        opacity: 0.5;
         @include backcolor(#82bae5, #ffdbf1);
     }
 
@@ -119,7 +119,7 @@
     }
 
     &__inner {
-        max-width: 1020px;
+        max-width: $contents_pc;
         margin: 0 auto;
     }
 
@@ -197,7 +197,7 @@
         @include flex-center;
         @include flex-wrap;
         padding: 0 0 40px;
-        max-width: 1020px;
+        max-width: $contents_pc;
         width: 100%;
         margin: 0 auto;
 
@@ -228,7 +228,7 @@
                 }
 
                 font-weight: 500;
-                color: #FFF;
+                color: #000;
             }
 
             p {
@@ -260,10 +260,20 @@
     padding: 20px 30px 60px;
     background: #FFF;
 
+    p{
+        word-break: break-all;
+    }
+
     .main__title {
         @include sp {
             padding-bottom: 80px;
         }
+    }
+
+    &__inner {
+        max-width: $contents_pc;
+        width: 100%;
+        margin: 0 auto;
     }
 
     &__jump {
@@ -278,32 +288,32 @@
         }
 
         label {
+            width: 50%;
             padding: 0 20px;
-            border: 1px solid rgb(78, 130, 183);
             padding: 20px;
             font-size: 30px;
             @include flex;
             @include flex-center;
             align-items: center;
-            border-radius: 20px;
-            transition: .4s;
-            margin: 0 20px 40px;
-
+            transition: .2s;
+            margin: 0 0 40px;
+            background: #FFF;
+            border: 2px solid $color-main;
+            color: $color-main;
             @include sp {
                 width: 50%;
-                margin: 0 6px 40px;
+                margin: 0 0 40px;
                 padding: 20px 10px;
-                font-size: 16px;
+                font-size: 18px;
                 text-align: center;
             }
         }
-
         label:hover,
         input:checked+label {
-            background: #333;
-            border: 1px solid $color-accent;
-            transition: .4s;
-            color: $color-accent;
+            background: $color-main;
+            border: 2px solid $color-main;
+            transition: .2s;
+            color: #FFF;
             cursor: pointer;
         }
     }
@@ -322,10 +332,12 @@
         li {
             width: 44%;
             margin: 0 6% 0 0;
-            @include pc{
+
+            @include pc {
                 width: 44%;
             }
-            @include sp{
+
+            @include sp {
                 width: 100%;
             }
         }
@@ -357,10 +369,10 @@
         }
     }
 
-    &__inner {
+    &__contents {
         border-left: 1px solid rgb(78, 130, 183);
         background-color: transparent;
-        max-width: 1020px;
+        max-width: $contents_pc;
         width: 100%;
         margin: 0 auto 80px;
         padding: 40px 0 0 0;

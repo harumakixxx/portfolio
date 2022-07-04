@@ -1,15 +1,28 @@
 #lightbox {
-    height: 80vh;
+    height: 100vh;
     top: 20px;
     margin-top: 20px;
-    .lb-outerContainer{
-        height: 80vh!important;
+
+    .lb-outerContainer {
+        height: 80vh !important;
         width: 600px;
         max-width: 80%;
         overflow-y: scroll;
-        img{
-            width: 100%!important;
-            height: auto!important;
+
+        img {
+            width: 100% !important;
+            height: auto !important;
         }
+    }
+
+    .lb-dataContainer {
+        width: 570px;
+        height: 0px;
+        line-height: 0;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .lb-details{
+        display: none;
     }
 }

@@ -4,7 +4,7 @@ $.BgSwitcher.switchHandlers.extraSlide = function($el) {
   $el.animate({right: -$el.width()}, this.config.duration, this.config.easing);
 };
 $(".box").bgswitcher({
-    images: ["../images/mv_poligon_3.jpg", "../images/mv_poligon_2.jpg", "../images/mv_poligon.jpg"],
+    images: ["../images/mv_poligon_3.jpg", "../images/mv_poligon.jpg", "../images/mv_poligon_4.jpg"],
     effect: "fade"
   });
 
